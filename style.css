@@ -1,0 +1,80 @@
+/* --- background --- */
+body {
+    background-color: #0008f9;
+    font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Popup box --- */
+.popup {
+    background-color: #c0c0c0;
+    border: 2px solid #808080;
+    box-shadow: 3px 3px 0 #404040;
+    width: 320px;
+    padding: 0;
+}
+
+/* --- title bar --- */
+.popup-titlebar {
+    background-color: #000080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.popup-titlebar .close-btn {
+    background-color: #c0c0c0;
+    border: 2px solid #808080;
+    color: black;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* --- popup content --- */
+.popup-content {
+    padding: 12px;
+}
+
+label {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    margin-top: 2px;
+    background-color: white;
+    border: 2px solid #808080;
+    box-shadow: inset 1px 1px 0 #fff;
+    font-family: inherit;
+}
+
+/* --- buttons --- */
+.buttons {
+    margin: 14px;
+    text-align: right;
+}
+
+button {
+    background-color: #c0c0c0;
+    border: 2px solid #808080;
+    box-shadow: 1px 1px 0 #fff;
+    padding: 4px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
