@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.captcha-box {
+    background: white;
+    display: flex;              /* makes checkbox and text sit in a row */
+    align-items: center;        /* vertically center aligns them */
+    gap: 10px;                  /* space between checkbox and text */
+    padding: 13px;
+    border: 1px solid #d3d3d3;
+    border-radius: 1px;
+    padding: 1px 10px;
+    align-items: center;
+    gap: 8px;
+    width: 118px;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.captcha-box input[type="checkbox"] {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    /* to remove default checkbox style */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2); /* inner shadow */
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+/* Optional hover effect */
+.captcha-box input[type="checkbox"]:hover {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.captcha-text {
+    flex-grow: 1;
+    font-size: 17px;
+    color: #333;
+}
+
+.captcha-box input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  
+  width: 1px;
+  height: 32px;
+  border: solid #a1a1a1;   /* blue color */
+  border-width: 0 6px 6px 0;
+  transform: rotate(45deg);
+}

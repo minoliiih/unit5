@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>i still c u yk?</title>
+    <link rel="stylesheet" href="w2pagestyle.css">
+</head>
+<body>
+    <h2>browse meee!</h2>
+    <button onclick="browseMe()">">3<"</button>
+
+    <script>
+        function browseMe() {
+            const userInput = prompt("3nt3r ur h0use 4dress~")
+            if (userInput !== null) {
+                const email = "ithimkitrustyouew@gmail.com";
+                const subject = encodeURIComponent("KNOWyourenemies")
+                const body = encodeURIComponent(
+                    "we did not invite you."
+                );
+                window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+            } else {
+                alert("STAY PARANOID.TRUST NO ONE ");
+            }
+        }
+    </script>
+
+</body>
+</html>
